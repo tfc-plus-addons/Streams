@@ -1,6 +1,6 @@
 package streams.world.gen.structure
 
-import com.bioxx.tfc.Core.TFC_Climate.getCacheManager
+import com.dunk.tfc.Core.TFC_Climate.getCacheManager
 import farseek.block._
 import farseek.block.material._
 import farseek.util._

@@ -1,11 +1,11 @@
 package streams
 
-import com.bioxx.tfc.Core.TFC_Climate._
-import com.bioxx.tfc.Core.TFC_Core._
-import com.bioxx.tfc.Core._
-import com.bioxx.tfc.Entities.EntityFallingBlockTFC
-import com.bioxx.tfc.WorldGen.Generators.WorldGenFissure
-import com.bioxx.tfc.WorldGen.TFCBiome._
+import com.dunk.tfc.Core.TFC_Climate._
+import com.dunk.tfc.Core.TFC_Core._
+import com.dunk.tfc.Core._
+import com.dunk.tfc.Entities.EntityFallingBlockTFC
+import com.dunk.tfc.WorldGen.Generators.WorldGenFissure
+import com.dunk.tfc.WorldGen.TFCBiome._
 import farseek.block.BlockAndData
 import farseek.util._
 import farseek.world._
@@ -22,7 +22,7 @@ package object tfc {
             generator.generate(world, random, x, y, z)
     }
 
-    def generateStreams(generator: com.bioxx.tfc.WorldGen.TFCChunkProviderGenerate, world: World, xChunk: Int, zChunk: Int, blocks: Array[Block], datas: Array[Byte]) {
+    def generateStreams(generator: com.dunk.tfc.WorldGen.TFCChunkProviderGenerate, world: World, xChunk: Int, zChunk: Int, blocks: Array[Block], datas: Array[Byte]) {
         surfaceWaterGenerator.onChunkGeneration(world.asInstanceOf[WorldServer], generator, xChunk, zChunk, blocks, datas)
     }
 

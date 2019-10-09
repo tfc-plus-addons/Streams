@@ -1,6 +1,6 @@
 package streams
 
-import com.bioxx.tfc.Core.TFC_Core
+import com.dunk.tfc.Core.TFC_Core
 import cpw.mods.fml.relauncher.Side._
 import cpw.mods.fml.relauncher.SideOnly
 import farseek.world.{BlockAccess, _}

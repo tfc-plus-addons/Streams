@@ -1,10 +1,10 @@
 package streams.tfc;
 
-import com.bioxx.tfc.Core.TFC_Climate;
-import com.bioxx.tfc.Core.TFC_Core;
-import com.bioxx.tfc.WorldGen.DataLayer;
-import com.bioxx.tfc.WorldGen.MapGen.MapGenBaseTFC;
-import com.bioxx.tfc.api.TFCBlocks;
+import com.dunk.tfc.Core.TFC_Climate;
+import com.dunk.tfc.Core.TFC_Core;
+import com.dunk.tfc.WorldGen.DataLayer;
+import com.dunk.tfc.WorldGen.MapGen.MapGenBaseTFC;
+import com.dunk.tfc.api.TFCBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.MathHelper;

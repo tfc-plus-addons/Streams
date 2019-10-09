@@ -1,6 +1,6 @@
 package streams.block
 
-import com.bioxx.tfc.Entities.EntityFallingBlockTFC
+import com.dunk.tfc.Entities.EntityFallingBlockTFC
 import cpw.mods.fml.common.registry.GameRegistry._
 import cpw.mods.fml.relauncher.Side._
 import cpw.mods.fml.relauncher._

@@ -1,8 +1,8 @@
 package streams.tfc;
 
-import com.bioxx.tfc.Core.TFC_Core;
-import com.bioxx.tfc.WorldGen.MapGen.MapGenBaseTFC;
-import com.bioxx.tfc.api.TFCOptions;
+import com.dunk.tfc.Core.TFC_Core;
+import com.dunk.tfc.WorldGen.MapGen.MapGenBaseTFC;
+import com.dunk.tfc.api.TFCOptions;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.MathHelper;
