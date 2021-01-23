@@ -588,7 +588,11 @@ public class TFCChunkProviderGenerate extends ChunkProviderGenerate
 				Block surfaceBlock = TFC_Core.getTypeForGrassWithRain(rock1.data1, rain);
 				Block subSurfaceBlock = TFC_Core.getTypeForDirtFromGrass(surfaceBlock);
 
-				float bioTemp = TFC_Climate.getBioTemperature(worldObj, chunkX * 16 + xCoord, chunkZ * 16 + zCoord);
+
+                int x = chunkX * 16 + xCoord;
+                int z = chunkZ * 16 + zCoord;
+
+				float bioTemp = TFC_Climate.getBioTemperature(worldObj, x, z);
 				int h = 0;
 				if(TFC_Core.isBeachBiome(getBiome(xCoord-1, zCoord).biomeID) || TFC_Core.isBeachBiome(getBiome(xCoord+1, zCoord).biomeID) || 
 						TFC_Core.isBeachBiome(getBiome(xCoord, zCoord+1).biomeID) || TFC_Core.isBeachBiome(getBiome(xCoord, zCoord-1).biomeID))
@@ -601,7 +605,7 @@ public class TFCChunkProviderGenerate extends ChunkProviderGenerate
 					int indexBig = (arrayIndex) * worldHeight + height + indexOffset;
 					int index = (arrayIndex) * 128 + height;
 					//metaBig[indexBig] = 0;
-					float temp = TFC_Climate.adjustHeightToTemp(height, bioTemp);
+					float temp = TFC_Climate.adjustHeightToTemp(worldObj, x, height, z, bioTemp);
 					if(TFC_Core.isBeachBiome(biome.biomeID) && height > seaLevel+h && idsTop[index] == Blocks.stone)
 					{
 						idsTop[index] = Blocks.air;
